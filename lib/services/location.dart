@@ -8,7 +8,6 @@ class Location {
     try {
       Position position =
           await getCurrentPosition(desiredAccuracy: LocationAccuracy.low);
-
       latitude = position.latitude;
       longitude = position.longitude;
     } catch (e) {
@@ -16,8 +15,3 @@ class Location {
     }
   }
 }
-
-/*
-double temperature = decodedData['main']['temp'];
-int condition = decodedData['weather'][0]['id'];
-String cityName = decodedData['name'];*/
